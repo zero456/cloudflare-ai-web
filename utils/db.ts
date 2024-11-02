@@ -83,19 +83,19 @@ export const uniModals: Model[] = [
 ]
 
 export const textGenModels: Model[] = [{
-    id: 'gpt-3.5-turbo',
-    name: 'ChatGPT-3.5-turbo',
+    id: 'gpt-4o-mini',
+    name: 'ChatGPT-4o-mini',
     provider: 'openai',
     endpoint: 'chat/completions',
     type: 'chat'
 }, {
-    id: '@cf/qwen/qwen1.5-14b-chat-awq',
-    name: 'qwen1.5-14b-chat-awq',
+    id: '@cf/meta/llama-3.1-70b-instruct',
+    name: 'meta-llama-3.1-70b-instruct',
     provider: 'workers-ai',
     type: 'chat'
 }, {
-    id: '@cf/openchat/openchat-3.5-0106',
-    name: 'openchat-3.5-0106',
+    id: '@cf/meta/llama-3.2-11b-vision-instruct',
+    name: 'meta-llama-3.2-11b-vision-instruct',
     provider: 'workers-ai',
     type: 'chat'
 }, {
@@ -107,30 +107,25 @@ export const textGenModels: Model[] = [{
     id: '@hf/thebloke/openhermes-2.5-mistral-7b-awq',
     name: 'openhermes-2.5-mistral-7b-awq',
     provider: 'workers-ai',
-    type: 'chat'
-}, {
-    id: '@hf/thebloke/neural-chat-7b-v3-1-awq',
-    name: 'neural-chat-7b-v3-1-awq',
-    provider: 'workers-ai',
-    type: 'chat'
-}, {
-    id: '@hf/nexusflow/starling-lm-7b-beta',
-    name: 'starling-lm-7b-beta',
-    provider: 'workers-ai',
-    type: 'chat'
-}, {
-    id: '@cf/meta/llama-3-8b-instruct',
-    name: 'llama-3-8b-instruct',
-    provider: 'workers-ai',
-    type: 'chat'
+    type: 'chat'    
 }]
 
 export const imageGenModels: Model[] = [{
-    id: '@cf/lykon/dreamshaper-8-lcm',
-    name: 'dreamshaper-8-lcm',
+    id: '@cf/black-forest-labs/flux-1-schnell',
+    name: 'flux-1-schnell',
     provider: 'workers-ai-image',
     type: 'text-to-image'
 }, {
+    id: '@cf/runwayml/stable-diffusion-v1-5-img2img',
+    name: 'stable-diffusion-v1-5-img2img',
+    provider: 'workers-ai-image',
+    type: 'text-to-image'
+}, {
+    id: '@cf/runwayml/stable-diffusion-v1-5-inpainting',
+    name: 'stable-diffusion-v1-5-inpainting',
+    provider: 'workers-ai-image',
+    type: 'text-to-image'
+}, {    
     id: '@cf/stabilityai/stable-diffusion-xl-base-1.0',
     name: 'stable-diffusion-xl-base-1.0',
     provider: 'workers-ai-image',

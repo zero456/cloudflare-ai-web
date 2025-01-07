@@ -67,13 +67,7 @@ export const initialSettings = {
 
 export type Settings = typeof initialSettings
 
-export const uniModals: Model[] = [
-    {
-        id: 'gpt-4o',
-        name: 'chatgpt-4o',
-        provider: 'openai',
-        type: 'universal'
-    },
+export const uniModals: Model[] = [    
     {
         id: 'gemini-1.5-pro',
         name: 'Gemini 1.5 Pro',
@@ -89,44 +83,19 @@ export const uniModals: Model[] = [
 ]
 
 export const textGenModels: Model[] = [{
-    id: 'gpt-3.5-turbo',
-    name: 'ChatGPT-3.5-turbo',
+    id: 'gpt-4o-mini',
+    name: 'chatgpt 4o mini',
     provider: 'openai',
     endpoint: 'chat/completions',
     type: 'chat'
 }, {
-    id: '@cf/qwen/qwen1.5-14b-chat-awq',
-    name: 'qwen1.5-14b-chat-awq',
+    id: '@cf/meta/llama-3.3-70b-instruct-fp8-fast',
+    name: 'llama 3.3 70b',
     provider: 'workers-ai',
     type: 'chat'
 }, {
-    id: '@cf/openchat/openchat-3.5-0106',
-    name: 'openchat-3.5-0106',
-    provider: 'workers-ai',
-    type: 'chat'
-}, {
-    id: '@cf/google/gemma-7b-it-lora',
-    name: 'gemma-7b-it-lora',
-    provider: 'workers-ai',
-    type: 'chat'
-}, {
-    id: '@hf/thebloke/openhermes-2.5-mistral-7b-awq',
-    name: 'openhermes-2.5-mistral-7b-awq',
-    provider: 'workers-ai',
-    type: 'chat'
-}, {
-    id: '@hf/thebloke/neural-chat-7b-v3-1-awq',
-    name: 'neural-chat-7b-v3-1-awq',
-    provider: 'workers-ai',
-    type: 'chat'
-}, {
-    id: '@hf/nexusflow/starling-lm-7b-beta',
-    name: 'starling-lm-7b-beta',
-    provider: 'workers-ai',
-    type: 'chat'
-}, {
-    id: '@cf/meta/llama-3-8b-instruct',
-    name: 'llama-3-8b-instruct',
+    id: '@cf/meta/llama-3.2-11b-vision-instruct',
+    name: 'llama 3.2 11b vision',
     provider: 'workers-ai',
     type: 'chat'
 }]
@@ -134,6 +103,11 @@ export const textGenModels: Model[] = [{
 export const imageGenModels: Model[] = [{
     id: '@cf/lykon/dreamshaper-8-lcm',
     name: 'dreamshaper-8-lcm',
+    provider: 'workers-ai-image',
+    type: 'text-to-image'
+}, {
+    id: '@cf/black-forest-labs/flux-1-schnell',
+    name: 'flux-1-schnell',
     provider: 'workers-ai-image',
     type: 'text-to-image'
 }, {

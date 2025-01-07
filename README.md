@@ -1,10 +1,6 @@
-# cloudflare-ai-web
+# deno deploy AI chat
 
 ## AI 启动！
-
-### 一键部署（推荐）
-
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2FJazee6%2Fcloudflare-ai-web&env=CF_TOKEN,CF_GATEWAY&envDescription=%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F%E4%BF%A1%E6%81%AF%E8%AF%B7%E6%9F%A5%E7%9C%8B&envLink=https%3A%2F%2Fgithub.com%2FJazee6%2Fcloudflare-ai-web)
 
 示例：https://ai.jaze.top
 
@@ -16,17 +12,6 @@ https://dash.deno.com
 - Build Step改为`NITRO_PRESET=deno-deploy npm run build_node`
 - Deploy Project
 - 设置环境变量
-
-### Docker
-
-```bash
-docker run -d --name cloudflare-ai-web \
-  -e CF_TOKEN=YOUR_CF_TOKEN \
-  -e CF_GATEWAY=YOUR_CF_GATEWAY \
-  -p 3000:3000 \
-  --restart=always \
-  jazee6/cloudflare-ai-web
-```
 
 ## 特性
 
@@ -81,21 +66,3 @@ https://dash.cloudflare.com/
 #### G_API_KEY
 
 https://ai.google.dev/tutorials/rest_quickstart#set_up_your_api_key
-
-#### G_API_URL
-
-参考 https://github.com/Jazee6/gemini-proxy 搭建反代，末尾无需`/`
-
-或者在`nuxt.config.ts`中添加以下配置
-
-```
-nitro: {
-    vercel: {
-        regions: ["sin1", "syd1", "sfo1", "iad1", "pdx1", "cle1"]
-    }
-}
-```
-
-## Star History
-
-[![Star History Chart](https://api.star-history.com/svg?repos=Jazee6/cloudflare-ai-web&type=Date)](https://star-history.com/#Jazee6/cloudflare-ai-web&Date)

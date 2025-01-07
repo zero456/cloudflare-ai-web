@@ -1,10 +1,10 @@
 {
-  "name": "Cloudflare AI Web",
-  "short_name": "Cloudflare AI Web",
+  "name": "FYX-Chat",
+  "short_name": "fyx-chat",
   "start_url": ".",
   "display": "standalone",
   "background_color": "#fff",
-  "description": "Cloudflare AI Web App",
+  "description": "AI Web chat App",
   "icons": [
     {
       "src": "/pwa.webp",

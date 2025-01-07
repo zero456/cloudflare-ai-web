@@ -2,7 +2,18 @@ import {GoogleGenerativeAI, HarmBlockThreshold, HarmCategory, SafetySetting} fro
 import {headers} from '~/utils/helper';
 import {OpenAIMessage} from "~/utils/types";
 
-const genAI = new GoogleGenerativeAI(process.env.G_API_KEY!)
+const genAI = new GoogleGenerativeAI(process.env.G_API_KEY!, {
+  fetch: async (input: RequestInfo | URL, init?: RequestInit) => {
+    const url = input.toString();
+    return fetch(url, {
+      ...init,
+      headers: {
+        ...init?.headers,
+        'Authorization': process.env.G_API_KEY!
+      }
+    });
+  }
+});
 
 export default defineEventHandler(async (event) => {
     const body = await readFormData(event)

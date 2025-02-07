@@ -95,8 +95,8 @@ export const uniModals: Model[] = [
 ]
 
 export const textGenModels: Model[] = [{
-    id: 'gpt-4o-mini',
-    name: 'chatgpt 4o mini',
+    id: 'o3-mini',
+    name: 'o3 mini',
     provider: 'openai',
     endpoint: 'chat/completions',
     type: 'chat'

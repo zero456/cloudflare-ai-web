@@ -69,26 +69,26 @@ export type Settings = typeof initialSettings
 
 export const uniModals: Model[] = [    
     {
-        id: 'gemini-exp-1206',
-        name: 'Gemini exp 1206',
+        id: 'gemini-2.0-flash-lite-preview-02-05',
+        name: 'Gemini 2.0 Flash Lite',
         provider: 'google',
         type: 'universal'
     },
     {
-        id: 'gemini-1.5-pro',
-        name: 'Gemini 1.5 Pro',
+        id: 'gemini-2.0-flash-thinking-exp-01-21',
+        name: 'Gemini 2.0 Flash Thinking',
         provider: 'google',
         type: 'universal'
     },
     {
-        id: 'gemini-2.0-flash-exp',
-        name: 'Gemini 2.0 Flash',
+        id: 'gemini-2.0-pro-exp-02-05',
+        name: 'Gemini 2.0 Pro',
         provider: 'google',
         type: 'universal'
     },
     {
-        id: 'gemini-2.0-flash-thinking-exp-1219',
-        name: 'Gemini 2.0 thinking',
+        id: 'gemini-2.0-flash',
+        name: 'Gemini 2.0 flash',
         provider: 'google',
         type: 'universal'
     }
@@ -100,7 +100,12 @@ export const textGenModels: Model[] = [{
     provider: 'openai',
     endpoint: 'chat/completions',
     type: 'chat'
-}, {
+},{
+    id: '@cf/deepseek-ai/deepseek-r1-distill-qwen-32b',
+    name: 'deepseek r1 distill qwen 32b',
+    provider: 'workers-ai',
+    type: 'chat'
+},{
     id: '@cf/meta/llama-3.3-70b-instruct-fp8-fast',
     name: 'llama 3.3 70b',
     provider: 'workers-ai',

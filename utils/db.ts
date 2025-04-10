@@ -69,36 +69,51 @@ export type Settings = typeof initialSettings
 
 export const uniModals: Model[] = [    
     {
-        id: 'gemini-2.0-flash-lite-preview-02-05',
-        name: 'Gemini 2.0 Flash Lite',
+        id: 'gemini-2.0-flash',
+        name: 'Gemini 2.0 Flash,1500/day',
         provider: 'google',
         type: 'universal'
     },
     {
         id: 'gemini-2.0-flash-thinking-exp-01-21',
-        name: 'Gemini 2.0 Flash Thinking',
+        name: 'Gemini 2.0 推理,1500/day',
         provider: 'google',
         type: 'universal'
     },
     {
-        id: 'gemini-2.0-pro-exp-02-05',
-        name: 'Gemini 2.0 Pro',
+        id: 'gemini-2.0-flash-exp-image-generation',
+        name: 'Gemini 2.0 文生图,1500/day',
         provider: 'google',
         type: 'universal'
     },
     {
-        id: 'gemini-2.0-flash',
-        name: 'Gemini 2.0 flash',
+        id: 'gemini-2.5-pro-preview-03-25',
+        name: 'Gemini 2.5 pro,Best,25/day',
         provider: 'google',
         type: 'universal'
-    }
+    },
+    {
+        id: 'google/gemini-2.5-pro-exp-03-25:free',
+        name: 'Gemini 2.5 pro,Best',
+        provider: 'openai',
+        type: 'universal'
+    }    
 ]
 
 export const textGenModels: Model[] = [{
-    id: 'o3-mini',
-    name: 'o3 mini',
+    id: 'nvidia/llama-3.1-nemotron-ultra-253b-v1:free',
+    name: 'nemotron-ultra',
+    provider: 'openai',    
+    type: 'chat'
+},{
+    id: 'deepseek/deepseek-chat-v3-0324:free',
+    name: 'deepseek v3-0324',
     provider: 'openai',
-    endpoint: 'chat/completions',
+    type: 'chat'
+},{
+    id: 'meta-llama/llama-4-maverick:free',
+    name: 'llama 4 maverick',
+    provider: 'openai',
     type: 'chat'
 },{
     id: '@cf/deepseek-ai/deepseek-r1-distill-qwen-32b',
@@ -111,8 +126,8 @@ export const textGenModels: Model[] = [{
     provider: 'workers-ai',
     type: 'chat'
 }, {
-    id: '@cf/meta/llama-3.2-11b-vision-instruct',
-    name: 'llama 3.2 11b vision',
+    id: '@cf/meta/llama-4-scout-17b-16e-instruct',
+    name: 'llama 4 scout',
     provider: 'workers-ai',
     type: 'chat'
 }]

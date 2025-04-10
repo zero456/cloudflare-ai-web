@@ -96,6 +96,7 @@ export const uniModals: Model[] = [
         id: 'google/gemini-2.5-pro-exp-03-25:free',
         name: 'Gemini 2.5 pro,Best',
         provider: 'openai',
+        endpoint: 'chat/completions',
         type: 'universal'
     }    
 ]
@@ -103,17 +104,20 @@ export const uniModals: Model[] = [
 export const textGenModels: Model[] = [{
     id: 'nvidia/llama-3.1-nemotron-ultra-253b-v1:free',
     name: 'nemotron-ultra',
-    provider: 'openai',    
+    provider: 'openai',
+    endpoint: 'chat/completions',    
     type: 'chat'
 },{
     id: 'deepseek/deepseek-chat-v3-0324:free',
     name: 'deepseek v3-0324',
     provider: 'openai',
+    endpoint: 'chat/completions',
     type: 'chat'
 },{
     id: 'meta-llama/llama-4-maverick:free',
     name: 'llama 4 maverick',
     provider: 'openai',
+    endpoint: 'chat/completions',
     type: 'chat'
 },{
     id: '@cf/deepseek-ai/deepseek-r1-distill-qwen-32b',

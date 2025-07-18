@@ -75,19 +75,19 @@ export const uniModals: Model[] = [
         type: 'universal'
     },
     {
-        id: 'gemini-2.5-flash-preview-04-17',
+        id: 'gemini-2.5-flash',
         name: 'Gemini 2.5 Flash,500/day',
         provider: 'google',
         type: 'universal'
     },
     {
-        id: 'gemini-2.0-flash-exp-image-generation',
+        id: 'gemini-2.0-flash-preview-image-generation',
         name: 'Gemini 2.0 文生图,1500/day',
         provider: 'google',
         type: 'universal'
     },
     {
-        id: 'gemini-2.5-pro-preview-03-25',
+        id: 'gemini-2.5-pro',
         name: 'Gemini 2.5 pro,Best,25/day',
         provider: 'google',
         type: 'universal'

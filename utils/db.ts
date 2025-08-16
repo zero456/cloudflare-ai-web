@@ -95,8 +95,8 @@ export const uniModals: Model[] = [
 ]
 
 export const textGenModels: Model[] = [{
-    id: '@cf/openai/gpt-oss-120b',
-    name: 'gpt-oss-120b',
+    id: '@cf/deepseek-ai/deepseek-r1-distill-qwen-32b',
+    name: 'deepseek-r1',
     provider: 'workers-ai',
     type: 'chat'
 },{

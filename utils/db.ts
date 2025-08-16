@@ -69,20 +69,20 @@ export type Settings = typeof initialSettings
 
 export const uniModals: Model[] = [    
     {
-        id: 'gemini-2.0-flash',
-        name: 'Gemini 2.0 Flash,1500/day',
+        id: 'gemini-2.5-flash-lite',
+        name: 'Gemini 2.0 Flash lite,15 RPM 500 req/day',
         provider: 'google',
         type: 'universal'
     },
     {
         id: 'gemini-2.5-flash',
-        name: 'Gemini 2.5 Flash,500/day',
+        name: 'Gemini 2.5 Flash,10 RPM 500 req/day',
         provider: 'google',
         type: 'universal'
     },
     {
         id: 'gemini-2.0-flash-preview-image-generation',
-        name: 'Gemini 2.0 文生图,1500/day',
+        name: 'Gemini 2.0 文生图,10 RPM 1500 req/day',
         provider: 'google',
         type: 'universal'
     },
@@ -95,18 +95,18 @@ export const uniModals: Model[] = [
 ]
 
 export const textGenModels: Model[] = [{
-    id: '@cf/deepseek-ai/deepseek-r1-distill-qwen-32b',
-    name: 'deepseek r1 distill qwen 32b',
+    id: '@cf/openai/gpt-oss-120b',
+    name: 'gpt-oss-120b',
     provider: 'workers-ai',
     type: 'chat'
 },{
-    id: '@cf/meta/llama-3.3-70b-instruct-fp8-fast',
-    name: 'llama 3.3 70b',
+    id: '@cf/meta/llama-4-scout-17b-16e-instruct',
+    name: 'llama-4-scout-17b-16e',
     provider: 'workers-ai',
     type: 'chat'
 }, {
-    id: '@cf/meta/llama-4-scout-17b-16e-instruct',
-    name: 'llama 4 scout',
+    id: '@cf/meta/llama-3.3-70b-instruct-fp8-fast',
+    name: 'llama-3.3-70b',
     provider: 'workers-ai',
     type: 'chat'
 }]
